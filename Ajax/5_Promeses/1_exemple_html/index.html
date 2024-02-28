@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>AJAX: Exemple amb Promeses 1</title>
+  <script>
+		function enviarPeticio() {
+            if ("Promise" in window) {
+                console.log('Abans de la petició');
+                let url = './benvinguda.html';
+                
+                fetch(url,{}).then( function (resposta) 
+                {
+                     console.log('dins del then');
+                     console.log(resposta);
+                     return resposta.text();
+                     // el què retona el 1r "then" (resposta.text()) és el paràmetre del 2n "then" (html)
+                }).then (function (html)
+                {
+					           console.log(html);
+                     document.getElementById('contingut-ajax').innerHTML = html;
+                }).catch (function (err)
+                {
+                    console.error("Error: "+err);
+                });
+                
+                console.log('después de la petició');
+              } else {
+                alert("Aquest navegador no soporta Promesas.");
+              }    
+			document.getElementById('descobrir').style.display = 'none';
+		}    
+		
+		document.addEventListener('DOMContentLoaded',function ()
+		{
+			document.getElementById('descobrir').addEventListener('click',enviarPeticio);
+           
+		});
+  </script>
+</head>
+<body>
+    <div class="titol">
+      <h1>Avui és un dia especial!</h1>
+	  
+    </div>
+    <h1><button id="descobrir" class="button">Saps perquè?</button></h1>
+    <div id="contingut-ajax"></div>
+    
+	<p>En aquest enllaç <a href='https://lenguajejs.com/javascript/peticiones-http/fetch/' target='_blank'> https://lenguajejs.com/javascript/peticiones-http/fetch/</a> pots trobar informació sobre les promeses de JS i en concret l'API fetch</p>
+</body>
+</html>

@@ -1,0 +1,16 @@
+[{
+	"nom": "josep",
+	"localitat": "igualada",
+	"edat": 45,
+	"codi_postal": "08700"
+}, {
+	"nom": "neus",
+	"localitat": "igualada",
+	"edat": 26,
+	"codi_postal": "08710"
+}, {
+	"nom": "enric",
+	"localitat": "igualada",
+	"edat": 45,
+	"codi_postal": "08720"
+}]

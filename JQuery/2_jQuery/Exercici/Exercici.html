@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>JQuery Exercicis</title>   
+		<script src="jquery-3.7.1.min.js"></script>
+		<script src="script.js"></script>
+    <style>
+			body{
+				font-family: "Lucida Console", monospace;
+			}
+			code{
+				background-color: azure;
+				color: blue;
+				font-size:large;
+			}
+			h1,h2{
+				background-color:darkblue;
+				color:azure;
+			}
+			input[type=button] {
+			  background-color: darkblue;
+			  color: azure;
+			  padding: 16px 32px;
+			  margin: 4px 2px;
+			  cursor: pointer;
+			}
+			.nova {
+				height:300px;
+				background-color: azure;
+				font-family:arial;
+			}
+		</style>
+    </head>
+	<body>
+		<h1>Exercicis amb JQuery</h1>
+		<h2>Exercici 5</h2>
+		<p id='ex5'>Quan l'usuari premi el botó amb <code>id boto</code> modificar el text del paràgraf amb <code>id ex5</code>, fent servir l'identificador complet jQuery enlloc del símbol $.</p>
+		<input type="button" value="Moficiar paràgraf" id="boto">
+		<h2>Exercici 6</h2>
+		<p>A partir de la següent llista fes els següents canvis d'estils:
+			<ol>
+				<li>Tots els <code>li</code> en posicions parells han de tenir la lletra de color blanc i el fons de color <code>CornflowerBlue</code>.</li>
+				<li>La mida de la lletra del tercer <code>li</code> ha de ser gran.</li>
+				<li>Tots els <code>li</code> han d'estar amb el text centrat menys els tercer.</li>
+				<li>Els <code>li</code> a partir del quart han de tenir el tipus de lletra <code>Arial</code>.</li>
+				<li>Els <code>li</code> a abans del quart han de tenir el tipus de lletra <code>italic</code>.</li>
+			</ol>
+		</p>
+		
+		<h2>Exercici 7</h2>
+		<p>A partir de la següent taula:
+			<table>
+				<tr><td>Aquells <code>td</code> que tinguin en el text <code>es</code> posar el color de fons peachpuff.<td><td></td></tr>
+				<tr><td></td><td>Aquells <code>td</code> que no tinguin text posar el color de fons yellow.</td></tr>
+				<tr><td>Afegir una nova fila al final de la taula identica a la primera fila.</td><td>Et pot ajudar el mètode <a href='https://api.jquery.com/clone/'>clone</a></td></tr>
+			</table>
+		</p>
+		<h2>Exercici 8</h2>
+		<p>
+		Quan l'usuari premi el botó cal que s'esborri el paràgraf anterior al botó. I l'etiqueta <code>img</code> que hi ha després del botó. Pot ser d'utilitat fer servir el mètode <a href='https://api.jquery.com/remove/#remove-selector'>remove</a>.</p>
+		<input type='button' value='esborrar'>
+		<img>
+		<h2>Exercici 9</h2>
+		<div id='capa'>
+			<p>
+				Afegir la <code>class nova</code> al element del dom amb <code>id capa</code>. Fer-ho utilitzant el mètode <a href='https://api.jquery.com/addClass/'>addClass</a>.
+			</p>
+			<p>
+			Quan l'usuari premi el boto amb la <code>class boto</code>, esborrar el contingut dels paràgrafs que hi ha dins del <code>div</code> amb <code>id capa</code>. Fer-ho utilitzant el mètode <a href='https://api.jquery.com/empty/'>empty</a>.
+			</p>
+			<p>
+			<input type='button' value='buidar' class='boto'>
+			</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,7 @@
+Exemple 
+de 
+Comunicació 
+Asíncrona 
+client-servidor 
+amb 
+Promeses

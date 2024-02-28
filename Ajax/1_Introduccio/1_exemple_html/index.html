@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>AJAX: Exemple 1</title>
+  <script>
+		let myRequest = new XMLHttpRequest();
+		
+		myRequest.open('GET', 'benvinguda.html');
+		myRequest.onreadystatechange = function () {
+				if (myRequest.readyState == 4 && myRequest.status == 200) {
+				
+				  document.getElementById('contingut-ajax').innerHTML = myRequest.responseText;
+				  console.log(myRequest.responseText);
+				
+				}
+		};
+	
+		function enviarPeticio() {
+			myRequest.send();
+			document.getElementById('descobrir').style.display = 'none';
+		}
+		
+		document.addEventListener('DOMContentLoaded',function ()
+		{
+			document.getElementById('descobrir').addEventListener('click',enviarPeticio);
+		});
+  </script>
+</head>
+<body>
+	<a href='https://lenguajejs.com/javascript/peticiones-http/xhr/'>Explicació de l'objecte XMLHttpRequest</a><br>
+	<a href='https://developer.mozilla.org/es/docs/Web/Guide/AJAX/Getting_Started'>Primers pasos</a>
+    <div class="titol">
+      <h1>Avui és un dia especial!</h1>
+	  
+    </div>
+    <h1><button id="descobrir" class="button">Saps perquè?</button></h1>
+    <div id="contingut-ajax"></div>
+	
+</body>
+</html>

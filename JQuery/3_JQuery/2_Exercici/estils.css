@@ -1,0 +1,50 @@
+body{
+	font-family: system-ui;
+}
+code{
+	background-color: cornsilk;
+    color: red;
+	font-size:large;
+}
+h2{
+	text-align:center;
+	border-style: none none solid none;
+	border-color: teal;
+	border-width: 4px;
+	background-color:paleturquoise;
+}
+table{
+	margin-left:auto;
+	margin-right:auto;
+	border-collapse:collapse;
+}
+td,th {
+	border:1px solid;
+	padding:0.3rem;
+}
+th {
+	background-color: teal;
+}
+tr:nth-child(even)
+{
+    background-color: mediumturquoise;
+}
+tr:nth-child(odd)
+{
+    background-color: paleturquoise;
+}
+.boto{
+	padding:0.2em 1.7em;
+	margin:0 0.5em 0.9em 0;
+	border-radius:25% 10%;
+    border-style: ridge;
+	border-color:black;
+	background-color:darkcyan;
+	text-align:center;
+	position:relative;	
+	cursor:pointer;
+}
+.pagina{
+	display:flex;
+	justify-content:center;
+}

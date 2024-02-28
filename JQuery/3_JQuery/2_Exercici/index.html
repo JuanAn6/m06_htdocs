@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JQUERY</title>   
+		<link rel="stylesheet" type="text/css" href="./estils.css">
+    </head>
+	<body>
+		<h2>Paginació</h2>
+		<ol>
+			<li>Es vol fer visible només 5 files del <code>tbody</code> de la taula.</li>
+			<li>Crear un <code>div</code> amb la classe <code>pagina</code>, ubicar-lo just abans de la taula</li>
+			<li>Per cada grup de 5 files o menys que tingui el <code>tbody</code> de la taula, crear un etiqueta <code>span</code> amb la classe <code>boto</code>. El text de cada <code>span</code> serà 1,2,... segons la quantitat. Ubicar els <code>span</code>'s dins del <code>div</code> crear en l'apartat anterior</li>
+			<li>Quan l'usuari premi algun dels <code>span</code>'s creats en el punt anterior fer que es mostrin les files de la taula que corresponguin</li>
+			<li>Modificar el color de fons de l'<code>span</code> premut per: <code>mediumturquoise</code></li>
+			<li>Afegir dos <code>span</code>'s més dels que hi ha amb la classe  <code>boto</code>. Un s'ha d'ubicar al principi i l'altre al final dels que ja hi ha. El text dels nous <code>span</code>'s ha de ser ANTERIOR i SEGÜENT. Quan l'usuari premi algun d'aquests, s'han de mostrar les files de la taula que corresponguin segons s'estigui actualment.</li>
+		</ol>
+		<table>
+			<thead>
+				  <tr>
+					<th>Comunidad Autónoma</th>
+					<th>Pob.(2006)</th>
+					<th>% (2006)</th></tr>
+			</thead>
+			<tbody>
+				  <tr><td>Andalucía</td><td>7.975.672</td><td>17,84% </td></tr>
+				  <tr><td>Cataluña</td><td>7.134.697</td><td>15,96% </td></tr>
+				  <tr><td>Comunidad de Madrid</td><td>6.008.183</td><td>13,44% </td></tr>
+				  <tr><td>Comunidad Valenciana</td><td>4.806.908</td><td>10,75% </td></tr>
+				  <tr><td>Galicia</td><td>2.767.524</td><td>6,19% </td></tr>
+				  <tr><td>Castilla y León</td><td>2.523.020</td><td>5,64% </td></tr>
+				  <tr><td>País Vasco</td><td>2.133.684</td><td>4,77% </td></tr>
+				  <tr><td>Canarias</td><td>1.995.833</td><td>4,46% </td></tr>
+				  <tr><td>Castilla-La Mancha</td><td>1.932.261</td><td>4,32%</td></tr> 
+				  <tr><td>Región de Murcia</td><td>1.370.306</td><td>3,06% </td></tr>
+				  <tr><td>Aragón</td><td>1.277.471</td><td>2,86% </td></tr>
+				  <tr><td>Extremadura</td><td>1.086.373</td><td>2,43% </td></tr>
+				  <tr><td>Principado de Asturias</td><td>1.076.896</td><td>2,41% </td></tr>
+				  <tr><td>Islas Baleares</td><td>1.001.062</td><td>2,24% </td></tr>
+				  <tr><td>Comunidad Foral de Navarra</td><td>601.874</td><td>1,35% </td></tr>
+				  <tr><td>Cantabria</td><td>568.091</td><td>1,27% </td></tr>
+				  <tr><td>La Rioja</td><td>306.377</td><td>0,69% </td></tr>
+				  <tr><td>Ceuta</td><td>75.861</td><td>0,17% </td></tr>
+				  <tr><td>Melilla</td><td>66.871</td><td>0,15% </td></tr>
+			</tbody>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+//selecciona parell even o imparell odd
+$('li:nth-child(even)').css({color: 'white', backgroundColor: 'CornflowerBlue'});
+//todos los li menos el tercero
+$('li:not(:nth-child(3))').css({textAlign: 'center'});
+//selecciona el segunfo li
+$('li').eq(2).css({fontSize: '20pt'});
+//a partir del quart
+$('li:nth-child(n+4)').css({fontFamily: 'arial'});
+//abans del tercer
+$('li:nth-child(n-3)').css({fontFamily: 'italic'});
+
+//selecciona el siguiente hermano y el anteriror
+$(boto).next().remove();
+$(boto).prev().remove();
+//selecciona exactamnete el siguiente hermano de es tipo y el anterior
+$(boto).next('p').remove();
+$(boto).prev('img').remove();
+
+//clona el elemento para que no sea referencia
+let tr = $('tr').eq(0).clone();
+
+//esborra el contig pero no les etiquetes contenedores en aquest cas les p
+$('p').empty();
+
+//centrar
+$('table').css({marginInline: 'auto'});

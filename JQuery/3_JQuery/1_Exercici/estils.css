@@ -1,0 +1,27 @@
+code{
+	background-color: cornsilk;
+    color: red;
+	font-size:large;
+}
+.imparell
+{
+    background-color: linen;
+	color:indianred;
+}
+.parell
+{
+    background-color: chocolate;
+	color:LemonChiffon;
+}
+.hover
+{
+    background-color: DimGray;
+    color: FloralWhite;
+    font-family:verdana;
+    font-size: 25px;
+	cursor: pointer;
+}
+.celes
+{
+    font-family:arial;
+}

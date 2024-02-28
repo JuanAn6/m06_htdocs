@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>
+		JQUERY i l'us de Taules
+		</title>   
+		<link rel="stylesheet" type="text/css" href="./estils.css">
+		<script src="../jquery-3.7.1.min.js":></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<h1></h1>
+		<p>A partir dels arxius proporcionats, quan es carregui la pàgina:
+			<ol>
+				<li>Centrar la taula a la pàgina</li>
+				<li>Afegir a la taula l'estil <code>border-collapse:collapse</code></li>
+				<li>Afegir a les etiquetes <code>td</code> l'estil <code>border: 1px solid chocolate</code> i <code>padding: 0.3rem</code></li>
+				<li>Afegir a les etiquetes <code>td</code> de dins del <code>tbody</code> la classe <code>celes</code> </li>
+				<li>Afegir a les files parells la classe <code>parell</code> i a les imparells la classe <code>imparell</code></li>
+				<li>Justificar a la dreta les cel·les que contenen números</li>
+				<li>Afegir la classe <code>hover</code> a les cel·les de la primera fila</li>
+				<li>Quan l'usuari faci clic sobre alguna de les cel·les de la primera fila ha d'ordenar la taula per aquella columna</li>
+				<li>Si una columna ja està ordenada i es torna a fer clic, s'ha d'ordenar en l'ordre contrari</li>
+			</ol>
+		</p>
+		<table>
+			<thead>
+				  <tr>
+					<td class='text'>Comunidad Autónoma</td>
+					<td class='numero'>Pob.(2006)</td>
+					<td class='numero'>% (2006)</td></tr>
+			</thead>
+			<tbody>
+				  <tr><td>Comunidad Foral de Navarra</td><td>601.874</td><td>1,35% </td></tr>
+				  <tr><td>País Vasco</td><td>2.133.684</td><td>4,77% </td></tr>
+				  <tr><td>Canarias</td><td>1.995.833</td><td>4,46% </td></tr>
+				  <tr><td>Cantabria</td><td>568.091</td><td>1,27% </td></tr>
+				  <tr><td>Comunidad de Madrid</td><td>6.008.183</td><td>13,44% </td></tr>
+				  <tr><td>Cataluña</td><td>7.134.697</td><td>15,96% </td></tr>
+				  <tr><td>Andalucía</td><td>7.975.672</td><td>17,84% </td></tr>
+				  <tr><td>Comunidad Valenciana</td><td>4.806.908</td><td>10,75% </td></tr>
+				  <tr><td>Galicia</td><td>2.767.524</td><td>6,19% </td></tr>
+				  <tr><td>Castilla y León</td><td>2.523.020</td><td>5,64% </td></tr>
+				  <tr><td>Castilla-La Mancha</td><td>1.932.261</td><td>4,32%</td></tr> 
+				  <tr><td>Región de Murcia</td><td>1.370.306</td><td>3,06% </td></tr>
+				  <tr><td>Aragón</td><td>1.277.471</td><td>2,86% </td></tr>
+				  <tr><td>Extremadura</td><td>1.086.373</td><td>2,43% </td></tr>
+				  <tr><td>Principado de Asturias</td><td>1.076.896</td><td>2,41% </td></tr>
+				  <tr><td>Islas Baleares</td><td>1.001.062</td><td>2,24% </td></tr>
+				  <tr><td>La Rioja</td><td>306.377</td><td>0,69% </td></tr>
+				  <tr><td>Ceuta</td><td>75.861</td><td>0,17% </td></tr>
+				  <tr><td>Melilla</td><td>66.871</td><td>0,15% </td></tr>
+			</tbody>
+		</table>
+		<p>La densidad de población en España es aproximadamente 88,59 hab/km². Es menor que la mayoría de países de la Unión Europea y su distribución geográfica es muy irregular. La población se concentra en las zonas de costa cantábrica-atlántica-mediterránea y en torno a la región metropolitana de Madrid. En el resto del Área geográfica interior se registra el problema de la despoblación siendo más acusada en zonas de Castilla-León y Navarra.
+		<img src='./poblacion.jpg'></p>
+	</body>
+</html>

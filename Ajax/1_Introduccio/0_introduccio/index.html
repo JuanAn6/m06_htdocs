@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="Author" content="Ester Marsal Roca">
+    <style>
+        h1 {
+          background-color:azure;
+        }
+    </style>
+    <title>
+    AJAX i ...
+    </title>   
+</head>
+<body>
+<h1>INTRODUCCIO</h1>
+<p><a href='https://es.slideshare.net/DipendraSinghShekhaw/difference-between-a-library-and-a-framework' target='_blank'>Diferència entre Llibreria i Framework</p>
+<p><a href='https://medium.com/javarevisited/10-javascript-frameworks-and-libraries-to-learn-in-2020-best-of-lot-5f61f86c60b4' target='_blank'>Frameworks de JS</p>
+<p><a href='https://www.spaceo.ca/blog/front-end-libraries/'>Libraries de JS</a></p>
+<img src='./Tecnologies.png'>
+<h1>JavaScript</h1>
+<h2>Per què serveix Ajax?</h2>
+<ul>
+	<li><b>Formularis d'inici de sessió</b><br>
+	Ajax  permet accedir a un formulari bàsic d'inici de sessió i, un cop introduïu la vostra informació d'inici de sessió, les vostres credencials es poden validar sense tornar a carregar el navegador. Haver d'esperar que una pàgina web es torni a carregar només per esbrinar que heu introduït la contrasenya incorrecta provoca una experiència d'usuari horrible.</li>
+	<li><b>Autocompleta</b><br>
+	Permet als motors de cerca oferir suggeriments a mesura que els usuaris escriuen a la barra de cerca. Un dels millors exemples és l'eina de suggeriments de cerca de Google. L'eina proporciona cerques habituals a la base de dades a mesura que una persona escriu a la barra de cerca. Cada pulsació de tecla fa que aparegui un suggeriment. Google Docs i Google Maps també són exemples fantàstics de les capacitats d'Ajax.</li>
+	<li><b>Actualització del contingut d'usuari</b><br>
+	A través d'Ajax, els usuaris de plataformes com Twitter poden publicar contingut que s'actualitza immediatament a la plataforma.</li>
+	<li><b>Validació de formularis</b><br>
+	 Es pot controlar fàcilment la força de les contrasenyes, la validesa dels correus electrònics,.... Ajax pot determinar si les entrades d'un formulari compleixen els requeriments.</li>
+	 <li><b>Interfície d'usuari eficient</b><br>
+	  Gràcies a Ajax es poden usar les funcionalitats d'una web amb menys temps de càrrega. Redueix el nombre de sol·licituds, els temps de càrrega i l'ample de banda.</li>
+</ul>
+<h2>Definició</h2>
+<ol>
+<li>AJAX és una <b>tècnica de programació que permet refrescar part del contingut de la pàgina actual sense haver-la de recarregar</b>. Això s'aconsegueix amb una petició asíncrona de JS al servidor, i una vegada obtingutdes les dades també s'usa JS per a actulitzar el contingut de la pàgina. En alguns casos, això millora molt la usabilitat de les aplicacions, i permet agilitar tasques i donar <i>feedback</i> als usuaris de manera molt més ràpida.</li>
+<li>AJAX (Asynchronous JavaScript and XML) és l'art d'intercanviar dades amb un servidor i actualitzar parts d'una pàgina web, sense tornar a carregar tota la pàgina. Per tant, Ajax fa que la pàgina web respongui ràpidament.</li>
+</ol>
+Tot i que AJAX és l'acrònim de Asynchronous JavaScript And XML, això no vol dir que el contingut asíncron estigui formatat exclusivament en format XML, de fet es fa servir més per intercanviar dades en format JSON.
+<p>
+<table border='1'>
+<tr><th>situacions síncrones (sincronitzades)</th><th>situacions asíncrones</th></tr>
+<tr><td>Conversa per Telèfon</td><td>Correu electrònic (e-mail)</td></tr>
+<tr><td>Entrevista personal</td><td>conversa per whatsapp</td></tr>
+</table>
+</p>
+<img src='./PETICIONS_DIFERENCIA.png'>
+<p>Els principals avantatges són:</p>
+  <ul>
+    <li>Millora la UI (interfície d’usuari) de l’aplicació web</li>
+    <li>Guanya en usabilitat de la pàgina, ja que no cal recarregar-la tota sencera, de manera dinàmica només s’actualitza la part que calgui</li>
+    <li>El temps d’espera per a una petició es redueix</li>
+    <li>El tràfic de dades amb el servidor es pot reduir de manera considerable</li>
+    <li>És independent de la plataforma on s’executi</li>
+  </ul>
+</p>Alguns dels inconvenients:</p>
+  <ul>
+    <li>Les pàgines creades dinàmicament no són registrades per l’historial del navegador. Així que fer clic al botó enrere no suposa tornar a un estat anterior de la pàgina</li>
+    <li>Si abusem de les crides al servidor, la comunicació es pot tornar molt lenta</li>
+    <li>SEO(Search engine optimization): pel tema del posicionament en cercadors, cal tenir present que el contingut dinàmic que procedeixi de crides AJAX no es tindrà en compte pels motors de recerca. Per tant, les paraules clau procedents de crides AJAX no es faran servir pel SEO.</li>
+  </ul>
+<h1>Sincronisme vers Asincronisme</h1>
+<p>La tècnica tradicional de crear pàgines web interactives es basa en la sincronia. Quan l’usuari activa un esdeveniment (normalment un botó), la pàgina fa la petició al servidor i aquest respon amb la nova pàgina a carregar.
+Les aplicacions creades amb AJAX eliminen la recàrrega constant de la pàgina mitjançant la creació d’un element intermedi entre l’usuari i el servidor. La nova capa intermèdia millora la resposta de l’aplicació, ja que l’usuari no es troba amb una finestra buida esperant la resposta del servidor.</p>
+<h1><a src='https://es.wikipedia.org/wiki/Single-page_application#cite_note-:0-7'>Single - page application</a> Com funciona una aplicació de pàgina única?</h1>
+<img src='./SinglePageApplication.png'>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="Author" content="Ester Marsal Roca" lang="es">
+		<title>JQuery Exercicis</title>   
+		<script>	
+			let opcions = ['slideDown','slideUp','fadeIn','fadeOut','opacitat','treure opacitat'];
+		</script>
+        <script src='../jquery-3.7.1.min.js'></script>
+		<script src='./script.js'></script>
+        <style>
+			body{
+				font-family: sans-serif;
+			}
+			code{
+				background-color: azure;
+				color: red;
+				font-size:large;
+			}
+			 p {
+				margin: 10px;
+				padding: 5px;
+				border: 2px solid #666;
+		    }
+			h1,h2{
+				background-color:darkgreen;
+				color:azure;
+			}
+		</style>
+    </head>
+	<body>
+		<h1>Exercicis amb JQuery</h1>
+		<h2>Exercici 0</h2>
+		<ol>
+			<li>Quan l'usuari prem el botó amb <code>id boto</code>, validar entrada.</li>
+			<li>En cas de ser validar, mostrar el nom del dia de la setmana corresponen al número dins l'etiqueta amb <code>id res</code></li>
+			<li>En cas de no ser valida, netejar la caixa de text i mostra el valor indicat i l'avis dins   l'etiqueta amb <code>id res</code> d'aquesta pàgina</li>
+		</ol>
+		<form>
+			<fieldset>
+				<legend>Exercici</legend>
+					<label for='valor'>Indica un número entre 1 i 7:</label>
+					<input type="text" id="valor" size="3">
+					<input type="button" value="Nom del dia de la setmana" id="boto"> <span id="res"></span><br>
+			</fieldset>
+		</form>
+		<h2>Exercici 1</h2>
+			<p>Fent servir la funció <a href='http://api.jquery.com/height/'>.height()</a>, mostrar l'altura de totes les etiquetes filles del body dins l'etiqueta amb <code>id res1</code>, després fer que cada <code>etiqueta p</code> tingui una altura de <code>80px</code>, excepte aquelles que tinguin una imatge a dins seu.</p>
+		<span id="res1"></span>
+		<h2>Exercici 2</h2>
+		<p>
+		Fer servir la funció <a href='http://api.jquery.com/outerheight/'>.outerheight()</a> per recuperar els valors de totes les eitquetes p i comparar-les amb els valors obtinguts en l'exercici anterior. Mostrar els valors dins l'etiqueta amb <code>id res2</code></p>
+		<span id="res2"></span>
+		<h2>Exercici 3</h2>
+		<p>
+		Afegir dos botons abans d'aquesta imatge. Els botons s'han de dir "ocultar" i "mostrar" i han de permetre amagar i mostrar la imatge, respectivament, fent ús de <a href='http://api.jquery.com/hide/'>hide</a> i <a href='https://api.jquery.com/show/#show'>show</a>.<br>
+		<img id='foto'src='./exercici2.jpg' height='300px'>
+		</p>
+		<h2>Exercici 4</h2>
+		<p>
+		Afegir un select després de la imatge, amb les opcions que hi ha dins l'array <code>opcions</code>. Quan es seleccioni alguna opció es modificarà l'estat de la imatge.
+		Ajuda: <a href='https://api.jquery.com/slideDown/#slideDown-duration-complete'>slideDown</a>,<a href='https://api.jquery.com/slideUp/#slideUp-duration-complete'>slideUp</a>,<a href='https://api.jquery.com/fadeIn/#fadeIn-duration-complete'>fadeIn</a>,<a href='https://api.jquery.com/fadeOut/#fadeOut-duration-complete'>fadeOut</a>,<a href='https://api.jquery.com/fadeTo/#fadeTo-duration-opacity-complete'>fadeTo</a>.
+		<img src='./exercici3.jpg'>
+		</p>
+		
+	</body>
+</html>

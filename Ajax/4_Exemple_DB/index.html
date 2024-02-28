@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <title>EXEMPLE</title> 
+        <meta name="description" content="codi HTML per interfície d'usuari amb Ajax, PHP and MySQL"> 
+        <style type="text/css">
+          #suggestion > li{
+            margin:5px 0 5px 0; 
+            color:#006400;
+            font-family:verdana;
+          }
+        </style>
+        <script src='./script.js'></script>
+    </head>
+    <body>
+        <form>
+			<fieldset>
+				<legend>Formulari autocompletar</legend>
+				<label for="book">Indica el nom del llibre o un fragment:</label>
+				<input type="text" id="book" list='llista'>
+			</fieldset>
+        </form>
+		<ol id="suggestion"></ol>
+		<datalist id='llista'>
+		</datalist>
+		<hr>
+		<p>Exemple de petició assincrona al servidor durant l'esdeveniment "keyup". La petició retorna dades procedents d'una BD (MySQL) en format text i desde JS es gestionen de 2 maneres diferents:
+			<ol>
+				<li>Afegint-les com option's dins un datalist. L'input té l'atribut list enllaçat al datalist</li>
+				<li>Afegint-les com li's dins un ol.</li>
+			</ol>
+		</p>
+    </body>
+</html>
