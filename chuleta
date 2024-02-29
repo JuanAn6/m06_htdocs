@@ -24,3 +24,6 @@ $('p').empty();
 
 //centrar
 $('table').css({marginInline: 'auto'});
+
+//assignar atributos a un elemento
+$('span').prop('id', i);
