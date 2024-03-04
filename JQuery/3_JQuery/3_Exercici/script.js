@@ -16,7 +16,7 @@ async function printarComandes(){
 
     let elements = []
     $(comandes).each((i,ele)=>{
-        elements.push($('<p>').prop('id', ele).text(ele).on('click', mostrarComanda));
+        elements.push($('<p>').prop('id', ele).text(ele).on('dblclick', mostrarComanda));
     })
     $('#comandes').append(elements);
 }
@@ -39,6 +39,25 @@ function mostrarComanda(event)
     $('#detalls :not(h2)').remove();
     $('#detalls').append($('<h3>').text('Comanda '+showDetalls[0].comanda+' del client '+showDetalls[0].client));
 
-    //taula
-}
 
+    let table = $('<table>');
+    table.append(
+        $('<tr>').append(...
+            $(titols).map((i, ele)=>{
+                return $('<td>').text(ele);
+            })
+        )
+    )
+    
+    $(showDetalls).each((i, ele)=>{
+        table.append(
+            $('<tr>').append(...
+                $(titols).map((i,titol)=>{
+                    return $('<td>').text(ele[titol]);
+                })
+            )
+        )  
+    });
+    
+    $('#detalls').append($(table));
+}
