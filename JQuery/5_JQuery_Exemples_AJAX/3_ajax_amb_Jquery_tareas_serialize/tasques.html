@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8">
+    <style>
+		body {
+			padding-top: 10px; 
+			padding-left: 20px;
+			font-family:arial;
+			width: 600px;
+			font-size:small;
+		}
+		fieldset {
+			background-color: PaleGreen;
+			color: black;
+			border: solid 2px DarkGreen;
+			border-radius: 7px;
+			font-size:medium;
+		}
+		legend {
+			color: DarkGreen;
+			padding: 5px 10px;
+			border-radius: 6px;
+			background: PaleGreen;
+			background-color: PaleGreen;
+			border-top:    2px solid  DarkGreen;
+			border-right:  2px solid  DarkGreen;
+			border-bottom: none;
+			border-left:   2px solid  DarkGreen;
+			
+		}
+		ol:first-of-type > li {
+			margin:5px 0 5px 0; 
+			color:black;
+		}
+		.button {
+		  background-color: black; 
+		  border: none;
+		  border-radius: 7px;
+		  color: limegreen;
+		  padding: 10px 12px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 10px;
+		}
+    </style>
+    <title>UF 4 - tasques</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script language='javascript' src='./script.js'></script>
+</head>
+<body>
+    <form>
+      <fieldset>
+			<legend>Alta nova tasca</legend>
+			<label for="nombre">Nom de la tasca: </label>
+			<input type="text" size="50" maxlength="50" name="nombre" required><br>
+			<label for="hora">Hora en què es realitza la tasca: </label>
+			<input type="number" size="3" max='23' min='0' name="hora" required><br>
+			<input type='submit' value='Desar la nova tasca' id='boto' class='button'>
+      </fieldset>
+    </form>
+</body>
+</html>

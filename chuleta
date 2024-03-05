@@ -28,3 +28,20 @@ $('table').css({marginInline: 'auto'});
 
 //assignar atributos a un elemento
 $('span').prop('id', i);
+
+//async functions
+async function printarComandes(){
+    detalls = await getComades();
+}
+async function getComades(){
+    try {
+        const response = await fetch('./comandes.json');
+        const json =  await response.json();
+        return json;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+//insertar elemento como hermano del selector
+$( "h2" ).insertAfter( $( ".container" ) );

@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>EXEMPLE JQuery</title> 
+    <meta name="description" content="HTML code for user interface for Ajax, PHP and MySQL demo."> 
+    <style type="text/css">
+		body {
+			padding-top: 10px; 
+			padding-left: 20px;
+			font-family:arial;
+			width: 400px;
+			font-size:small;
+		}
+		fieldset {
+			background-color: #f4f1ed;
+			color: firebrick;
+			border: solid 2px darkgoldenrod;
+			border-radius: 7px;
+			font-size:medium;
+		}
+		legend {
+			color: darkgoldenrod;
+			padding: 5px 10px;
+			border-radius: 6px;
+			text-align: center;
+			background: #f4f1ed;
+			border-top:    2px solid  darkgoldenrod;
+			border-right:  2px solid  darkgoldenrod;
+			border-bottom: none;
+			border-left:   2px solid  darkgoldenrod;
+			
+		}
+		ol:first-of-type > li {
+			margin:5px 0 5px 0; 
+			color:firebrick;
+		}
+	</style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src='./script.js'></script>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Formulari autocompletar</legend>
+			<label for="book">Indica el nom del llibre o un fragment:</label>
+			<input type="text" id="book" list='llista' size='5'>
+		</fieldset>
+	</form>
+	<ol id="suggestion"></ol>
+	<datalist id='llista'></datalist>
+	<hr>
+	<p>Exemple de petició assincrona al servidor durant l'esdeveniment "keyup". La petició retorna dades procedents d'una BD (MySQL) en format text i desde JS es gestionen de 2 maneres diferents:
+		<ol>
+			<li>Afegint-les com option's dins un datalist. L'input té l'atribut list enllaçat al datalist</li>
+			<li>Afegint-les com li's dins un ol.</li>
+		</ol>
+	</p>
+</body>
+</html>

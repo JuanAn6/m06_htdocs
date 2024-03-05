@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="Author" content="Ester Marsal Roca">
+    <title>
+    JQuery and onProgress event
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='./script.js'></script>
+	<style>
+		body {
+			padding-top: 10px; 
+			padding-left: 20px;
+			font-family:arial;
+			width: 400px;
+			font-size:medium;
+		}
+		fieldset {
+			background-color: violet;
+			color: blueviolet;
+			border: solid 2px blueviolet;
+			border-radius: 7px;
+			font-size:medium;
+		}
+		legend {
+			color: blueviolet;
+			padding: 5px 10px;
+			border-radius: 6px;
+			text-align: center;
+			background: violet;
+			border-top:    2px solid  blueviolet;
+			border-right:  2px solid  blueviolet;
+			border-bottom: none;
+			border-left:   2px solid  blueviolet;
+			
+		}
+	</style>
+</head>
+<body>
+	<form>
+	  <fieldset>
+		<legend>Cercador de noms</legend>
+		<p>
+			Nom de persona: <input type='text' id="nom"><br>
+		</p>
+	  </fieldset>
+    </form>
+	<p>
+	  Suggeriments: <span id='sugg'></span>
+    </p>
+</body>
+</html>
