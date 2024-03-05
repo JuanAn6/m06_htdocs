@@ -29,6 +29,44 @@ $('table').css({marginInline: 'auto'});
 //assignar atributos a un elemento
 $('span').prop('id', i);
 
+//insertar elemento como hermano del selector
+$( "h2" ).insertAfter( $( ".container" ) );
+
+//AJAX
+//http request
+function peticio_marques()
+{
+    let objecteAjax = (window.XMLHttpRequest) ?  new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+    objecteAjax.open("GET","./cotxes.xml");
+    objecteAjax.onreadystatechange = (()=>{
+        if (objecteAjax.readyState == 4 && objecteAjax.status == 200){
+            get_marques(objecteAjax.responseXML);   
+        }
+    });
+    objecteAjax.send();
+}
+
+//Promeses
+if ("Promise" in window) {
+	let url = './servidor.php';
+	fetch(url,{
+		method: 'POST',
+		headers: {"Content-Type":"application/x-www-form-urlencoded"},
+		mode: 'cors',
+		cache: 'default',
+		body: data,
+	}).then( function (resposta) {
+		return resposta.json();
+	}).then (function (a){
+		console.log(a);
+		//code...
+    }).catch (function (err){
+        console.error("Error: "+err);
+    });
+    } else {
+      alert("Aquest navegador no soporta Promesas.");
+    }    
+
 //async functions
 async function printarComandes(){
     detalls = await getComades();
@@ -43,5 +81,3 @@ async function getComades(){
     }
 }
 
-//insertar elemento como hermano del selector
-$( "h2" ).insertAfter( $( ".container" ) );
