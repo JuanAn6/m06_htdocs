@@ -81,3 +81,21 @@ async function getComades(){
     }
 }
 
+//ajax
+$.ajax({
+    type: 'POST',
+    url: 'http://localhost/M06/JQuery/Exercici1/servidor.php',
+    data: { inici: true},
+    dataType: 'json', //json parse directemnt de les dades
+    success: function (responseData) {
+        console.log('primeraCarrega', responseData);
+        $('#select1').append(...
+            $(responseData).map((i, ele)=>{
+                return $('<option>').prop('value', ele.id_comunidad).text(ele.nombre);
+            })
+        ).prop('disabled', false);
+    },
+    error: function (error) {
+        console.error('Error:', error);
+    }
+});
