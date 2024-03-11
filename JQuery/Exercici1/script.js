@@ -43,6 +43,7 @@ function segonaPeticio(evt)
 {
     $('#select2').prop('disabled', true);
     $('#select3').prop('disabled', true);
+    $('body span').remove();
     if(evt.target.value != ''){
         $.post('http://localhost/M06/JQuery/Exercici1/servidor.php', { comunitats: evt.target.value}, (data)=>{
             //console.log('segonaCarrega', data);
@@ -59,6 +60,7 @@ function segonaPeticio(evt)
 function terceraPeticio(evt)
 {
     $('#select3').prop('disabled', true);
+    $('body span').remove();
     if(evt.target.value != ''){
         const promesa = $.ajax({
             url: 'http://localhost/M06/JQuery/Exercici1/servidor.php',
@@ -80,15 +82,20 @@ function terceraPeticio(evt)
     }
 }
 
-function mostrarDades()
+function mostrarDades(evt)
 {
 
-    $('body span').remove();
-    $('body').append($('<span>').text(
-            'Comunitat: '+$('#select1').find('option:selected').text()+', '+
-            'Provincia: '+$('#select2').find('option:selected').text()+', '+
-            'Municipi: '+$('#select3').find('option:selected').text()
+    if(evt.target.value != ''){
+        $('body span').remove();
+        $('body').append($('<span>').text(
+                'Comunitat: '+$('#select1').find('option:selected').text()+', '+
+                'Provincia: '+$('#select2').find('option:selected').text()+', '+
+                'Municipi: '+$('#select3').find('option:selected').text()
 
+            )
         )
-    )
+    }else{
+        $('body span').remove();
+    }
+    
 }
