@@ -31,6 +31,7 @@ $('span').prop('id', i);
 
 //insertar elemento como hermano del selector
 $( "h2" ).insertAfter( $( ".container" ) );
+$( "h2" ).insertBefore( $( ".container" ) );
 
 //AJAX
 //http request
